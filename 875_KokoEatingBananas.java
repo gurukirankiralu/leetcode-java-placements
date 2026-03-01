@@ -15,6 +15,9 @@ class Solution {
             int totalHour=0;
             for(int i=0;i<piles.length;i++){
                 totalHour+=(piles[i]+mid-1)/mid;
+                if(totalHour>h){
+                    break;
+                }
 
             }
             if(totalHour<=h){
